@@ -395,6 +395,8 @@ h6, .h6 {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .display-1 {
