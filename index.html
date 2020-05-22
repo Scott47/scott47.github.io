@@ -43,7 +43,7 @@ var template_id = "template_dci4dI4E";
 </script>
 <script type="text/javascript">
   window.onload = function() {
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
+      let form = document.getElementById('contact-form').addEventListener('submit', function(event) {
           event.preventDefault();
           console.log(event);
           var template_params = {
@@ -56,7 +56,9 @@ var template_id = "template_dci4dI4E";
           console.log(this);
           this.contact_number.value = Math.random() * 100000 | 0;
           emailjs.send(service_id, template_id, template_params);
+          this.reset()
       });
+
   }
   </script>
 
@@ -131,8 +133,7 @@ var template_id = "template_dci4dI4E";
   <section id="about" class="about-mf sect-pt4 route">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="box-shadow-full">
+          <!-- <div class="box-shadow-full"> -->
             <div class="title-box-2">
               <h5 class="title-left">
                 About me
@@ -141,13 +142,13 @@ var template_id = "template_dci4dI4E";
             <div class="row">
               <div class="col-md-12">
                 <div class="about-me row pt-4 pt-md-0">
-                  <div class="col-sm-12 col-md-5">
+                  <div class="col-sm-8 col-md-5">
                     <div class="pull-left">
-                      <img src="/img/SS_Pro.png" class="img-repsonsive pull-left img-fluid rounded b-shadow-a" width="70%" alt="">
+                      <img src="/img/SS_Pro.png" class="img-repsonsive pull-left img-fluid rounded b-shadow-a" width="80%" alt="">
                     </div>
                     <div class="about-info">
-                      <p><span class="title-s"></span> <span>Scott Silver</span></p>
-                      <p><span class="title-s"></span> <span>Software Developer</span></p>
+                      <p><span class="title-s">👨‍🦲 </span> <span>   Scott Silver</span></p>
+                      <p><span class="title-s">👨‍💼 </span> <span>   Software Developer</span></p>
                       <p><span class="title-s">📧 </span> <span>scottsilver47@gmail.com</span></p>
                       <p><span class="title-s">📱 </span> <span>(615) 974-6679</span></p>
                       <div class="socials">
@@ -175,8 +176,7 @@ var template_id = "template_dci4dI4E";
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
   </section>
