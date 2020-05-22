@@ -27,6 +27,10 @@ h6 {
     word-wrap: break-word;
 }
 
+.map-background {
+  color: lightskyblue;
+}
+
 a {
   color: #1e1e1e;
   transition: all 0.5s ease-in-out;
