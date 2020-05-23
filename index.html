@@ -23,44 +23,6 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_D4xqvaXusdUP4J9KaFCvf");
-   })();
-</script>
-<script>
-// var template_params = {
-//    "reply_to": "reply_to_value",
-//    "from_name": "from_name_value",
-//    "to_name": "to_name_value",
-//    "message_html": "message_html_value"
-// }
-
-var service_id = "scott_silver";
-var template_id = "template_dci4dI4E";
-//emailjs.send(service_id, template_id, template_params);
-</script>
-<script type="text/javascript">
-  window.onload = function() {
-      let form = document.getElementById('contact-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          console.log(event);
-          var template_params = {
-            "reply_to": document.getElementById("user_email").value,
-            "from_name": document.getElementById("user_name").value,
-            "to_name": "Scott",
-            "message_html": document.getElementById("message_html").value
-}
-
-          console.log(this);
-          this.contact_number.value = Math.random() * 100000 | 0;
-          emailjs.send(service_id, template_id, template_params);
-          this.reset()
-      });
-
-  }
-  </script>
 
 
   <!-- =======================================================
@@ -136,28 +98,29 @@ var template_id = "template_dci4dI4E";
                 About me
               </h5>
             </div>
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="col-sm-5 col-md-5">
+
+              <!-- <div class="col-md-12"> -->
+                <div class="row responsive">
+                  <div class="col-sm-3 col-md-3">
                     <div class="pull-left author-test">
-                      <img src="img/SS_Pro.png" alt="" class="img-repsonsive pull-left img-fluid rounded-circle b-shadow-a proshot">
-                    </div>
+                      <img src="img/SS_Pro.png" alt="" class="img-repsonsive pull-left img-fluid proshot rounded-square b-shadow-a ">
+                     </div>
                     <div class="about-info">
-                      <p><span class="title-s">&emsp;  </span> <span>Scott Silver</span></p>
-                      <p><span class="title-s">&emsp;  </span> <span>Software Developer</span></p>
+                      <p><span class="title-s">&emsp;</span><span>Scott Silver</span></p>
+                      <p><span class="title-s">&emsp;</span><span>Software Developer</span></p>
                       <p><span class="title-s">📧</span> <span>scottsilver47@gmail.com</span></p>
                       <p><span class="title-s">📱</span> <span>(615) 974-6679</span></p>
-
+                    </div>
                       <div class="socials">
                         <ul>
-                      <li><a href="https://github.com/Scott47/"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
-                        <li><a href="https://www.linkedin.com/in/scottsilver47/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-                        <li><a href="/img/Scott_Silver_resume_20.pdf"><span class="ico-circle"><i class="ion-code-download"></i></span></a></li>
-                      </ul>
+                          <li><a href="https://github.com/Scott47/"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                          <li><a href="https://www.linkedin.com/in/scottsilver47/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                          <li><a href="/img/Scott_Silver_resume_20.pdf"><span class="ico-circle"><i class="ion-code-download"></i></span></a></li>
+                        </ul>
                     </div>
                 </div>
-              </div>
-                <div class="col-md-7 col-md-7">
+              <!-- </div> -->
+                <div class="col-sm-9 col-md-9">
                   <p class="lead">
                    What I like most about software development is how it feels like I am part of a community of learners
                    and problem solvers. I love learning new things, building things, finding solutions, making connections,
@@ -169,6 +132,7 @@ var template_id = "template_dci4dI4E";
                    and building/practicing my coding skills with tutorials, community projects, and personal projects. Right now, I work with Python,
                    Django, Django REST Framework, SQLite, React, JavaScript, HTML 5, CSS3.
                   </p>
+                <!-- </div> -->
                 </div>
       </div>
     </div>
@@ -198,7 +162,7 @@ var template_id = "template_dci4dI4E";
                   <!-- </div> -->
 
   <!--/ Section Portfolio Star /-->
-  <section id="work" class="portfolio-mf sect-pt4 route" style="background-image: url(/img/earth-lights-world-41949.jpg)">
+  <section id="work" class="portfolio-mf paralax-mf sect-pt4 route" style="background-image: url(/img/earth-lights-world-41949.jpg)">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -268,7 +232,7 @@ var template_id = "template_dci4dI4E";
   <!--/ Section Portfolio End /-->
 
     <!--/ Section Services Star /-->
-    <section id="service" class="services-mf route">
+    <section id="service" class="paralax-mf services-mf route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -409,7 +373,7 @@ var template_id = "template_dci4dI4E";
     <!--/ Section Services End /-->
 
   <!--/ Section Testimonials Star /-->
-  <div class="testimonials paralax-mf bg-image" style="background-image: url(/img/earth-lights-world-41949.jpg)">
+  <!-- <div class="testimonials paralax-mf bg-image" style="background-image: url(/img/earth-lights-world-41949.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -445,7 +409,7 @@ var template_id = "template_dci4dI4E";
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!--/ Section Blog Star /-->
   <!-- <section id="blog" class="blog-mf sect-pt4 route">
@@ -608,7 +572,7 @@ var template_id = "template_dci4dI4E";
                         </div>
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 2 chars of subject" />
                               <div class="validation"></div>
                             </div>
                         </div>
@@ -621,6 +585,7 @@ var template_id = "template_dci4dI4E";
                         <div class="col-md-12">
                           <input type="submit" value="Send Message" class="button button-a button-big button-rouded"/>
                         </div>
+                        <div class="sent"></div>
                       </div>
                     </form>
                   </div>
@@ -633,7 +598,7 @@ var template_id = "template_dci4dI4E";
                   </div>
                   <div class="more-info">
                     <p class="lead">
-                      If you would like to get involved in the Our Story Maps project or have any questions you would like to ask me, please contact me. Feel free to call, email, or connect via Linkedin. Thank you.
+                      Please contact me if you have any questions or would like to collaborate. Feel free to call, email, or connect via Linkedin. Thank you.
                     </p>
                     <ul class="list-ico">
                       <li><span class="ion-ios-location"></span>  Nashville, TN </li>
@@ -696,6 +661,7 @@ var template_id = "template_dci4dI4E";
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>
