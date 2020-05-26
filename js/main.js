@@ -145,5 +145,4 @@ window.onload = function() {
 		emailjs.send(service_id, template_id, template_params);
 		this.reset()
 	});
-		sent();
 }
