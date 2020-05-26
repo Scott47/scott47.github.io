@@ -2,7 +2,7 @@
 	"use strict";
 	var nav = $('nav');
   var navHeight = nav.outerHeight();
-  
+
   $('.navbar-toggler').on('click', function() {
     if( ! $('#mainNav').hasClass('navbar-reduce')) {
       $('#mainNav').addClass('navbar-reduce');
@@ -73,7 +73,7 @@
 	/*--/ Navbar Menu Reduce /--*/
 	$(window).trigger('scroll');
 	$(window).on('scroll', function () {
-		var pixels = 50; 
+		var pixels = 50;
 		var top = 1200;
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-md').addClass('navbar-reduce');
@@ -115,3 +115,34 @@
 	});
 
 })(jQuery);
+
+//email send from email.js
+
+(function(){
+	emailjs.init("user_D4xqvaXusdUP4J9KaFCvf");
+ })();
+
+var service_id = "scott_silver";
+var template_id = "template_dci4dI4E";
+
+
+function sent() {
+	return alert("thank you for your message")
+}
+window.onload = function() {
+	let form = document.getElementById('contact-form').addEventListener('submit', function(event) {
+		event.preventDefault();
+		console.log(event);
+		var template_params = {
+		  "reply_to": document.getElementById("user_email").value,
+		  "from_name": document.getElementById("user_name").value,
+		  "to_name": "Scott",
+		  "message_html": document.getElementById("message_html").value
+}
+
+		console.log(this);
+		this.contact_number.value = Math.random() * 100000 | 0;
+		emailjs.send(service_id, template_id, template_params);
+		this.reset()
+	});
+}
