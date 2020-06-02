@@ -24,7 +24,14 @@ h6 {
 }
 
 .lead {
-    word-wrap: break-word;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1em;
+
+}
+.lead-2 {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .map-background {
@@ -802,6 +809,7 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
+  object-fit: fill;
 }
 
 .work-img img {
